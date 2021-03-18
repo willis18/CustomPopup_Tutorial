@@ -16,6 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLl-1P-LhY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvx-NR-hDG">
                                 <rect key="frame" x="157" y="761" width="100" height="36"/>
                                 <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -24,15 +32,26 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="팝업띄우기"/>
+                                <connections>
+                                    <action selector="onCreatePopupBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TtG-8c-xZw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Zvx-NR-hDG" secondAttribute="bottom" constant="65" id="8Yf-nQ-3wU"/>
+                            <constraint firstItem="lLl-1P-LhY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tsn-zo-3Aq"/>
+                            <constraint firstItem="lLl-1P-LhY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fLm-Pq-iIa"/>
+                            <constraint firstItem="lLl-1P-LhY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qt6-iF-UkV"/>
+                            <constraint firstItem="lLl-1P-LhY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qz7-mL-1SW"/>
                             <constraint firstItem="Zvx-NR-hDG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uMq-eY-tT0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="createPopupBtn" destination="Zvx-NR-hDG" id="Dzx-xG-BSw"/>
+                        <outlet property="myWebView" destination="lLl-1P-LhY" id="Ztn-6R-yci"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

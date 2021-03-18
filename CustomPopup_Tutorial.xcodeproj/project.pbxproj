@@ -15,6 +15,7 @@
 		1A7233F925FBABAF00873E15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7233F725FBABAF00873E15 /* LaunchScreen.storyboard */; };
 		1A72340325FBAF2600873E15 /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A72340225FBAF2600873E15 /* Popup.storyboard */; };
 		1A72340625FE68EA00873E15 /* CustomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A72340525FE68EA00873E15 /* CustomPopupViewController.swift */; };
+		1A779BC725FF3028004F05C1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A779BC625FF3028004F05C1 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1A7233FA25FBABAF00873E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A72340225FBAF2600873E15 /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
 		1A72340525FE68EA00873E15 /* CustomPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopupViewController.swift; sourceTree = "<group>"; };
+		1A779BC625FF3028004F05C1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A779BC725FF3028004F05C1 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 			children = (
 				1A7233EB25FBABAE00873E15 /* CustomPopup_Tutorial */,
 				1A7233EA25FBABAE00873E15 /* Products */,
+				1A779BC525FF3028004F05C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +75,14 @@
 				1A72340525FE68EA00873E15 /* CustomPopupViewController.swift */,
 			);
 			path = CustomPopup_Tutorial;
+			sourceTree = "<group>";
+		};
+		1A779BC525FF3028004F05C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A779BC625FF3028004F05C1 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
