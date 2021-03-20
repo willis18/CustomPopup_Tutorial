@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A273BC22605EF4900E50793 /* PopupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A273BC12605EF4900E50793 /* PopupDelegate.swift */; };
 		1A7233ED25FBABAE00873E15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7233EC25FBABAE00873E15 /* AppDelegate.swift */; };
 		1A7233EF25FBABAE00873E15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7233EE25FBABAE00873E15 /* SceneDelegate.swift */; };
 		1A7233F125FBABAE00873E15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7233F025FBABAE00873E15 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A273BC12605EF4900E50793 /* PopupDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupDelegate.swift; sourceTree = "<group>"; };
 		1A7233E925FBABAE00873E15 /* CustomPopup_Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPopup_Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7233EC25FBABAE00873E15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A7233EE25FBABAE00873E15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				1A7233FA25FBABAF00873E15 /* Info.plist */,
 				1A72340225FBAF2600873E15 /* Popup.storyboard */,
 				1A72340525FE68EA00873E15 /* CustomPopupViewController.swift */,
+				1A273BC12605EF4900E50793 /* PopupDelegate.swift */,
 			);
 			path = CustomPopup_Tutorial;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				1A72340625FE68EA00873E15 /* CustomPopupViewController.swift in Sources */,
 				1A7233F125FBABAE00873E15 /* ViewController.swift in Sources */,
 				1A7233ED25FBABAE00873E15 /* AppDelegate.swift in Sources */,
+				1A273BC22605EF4900E50793 /* PopupDelegate.swift in Sources */,
 				1A7233EF25FBABAE00873E15 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

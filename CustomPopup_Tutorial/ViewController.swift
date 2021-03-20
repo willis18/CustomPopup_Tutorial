@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, PopupDelegate {
 
     @IBOutlet var createPopupBtn: UIButton!
     @IBOutlet var myWebView: WKWebView!
@@ -30,12 +30,18 @@ class ViewController: UIViewController {
         
         customPopupVC.subscribeBtnCompletionClosuer = {
             let myChannelUrl = URL(string: "https://www.youtube.com/watch?v=RSGfF0qMf4o&list=PLgOlaPUIbynqRzpQBIdEDnjDdkVsjHqxK&index=19")
-            print("웹로딩 거침")
             self.myWebView.load(URLRequest(url: myChannelUrl! ))
         }
+        
+        customPopupVC.myPopupDelegate = self
         
         self.present(customPopupVC, animated: true, completion: nil)
     }
     
+    //MARK: - PopupDelegate methods
+    func onOpenChatBtnClicked() {
+        let myChannelUrl = URL(string: "https://open.kakao.com")
+        self.myWebView.load(URLRequest(url: myChannelUrl! ))
+    }
 }
 
