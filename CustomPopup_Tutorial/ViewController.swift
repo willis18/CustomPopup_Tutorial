@@ -8,14 +8,28 @@
 import UIKit
 import WebKit
 
+let notificationName = "btnClickedNotification"
+
 class ViewController: UIViewController, PopupDelegate {
 
     @IBOutlet var createPopupBtn: UIButton!
     @IBOutlet var myWebView: WKWebView!
     
+    deinit{
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    
+        // notification 방송 수신기를 등록
+        NotificationCenter.default.addObserver(self, selector: #selector(loadWebView), name: NSNotification.Name(rawValue: notificationName), object: nil)
+    }
+    
+    @objc fileprivate func loadWebView(){
+        let myblogUrl = URL(string: "https://blog.naver.com")
+        self.myWebView.load(URLRequest(url: myChannelUrl! ))
     }
 
     @IBAction func onCreatePopupBtnClicked(_ sender: UIButton) {
@@ -40,7 +54,7 @@ class ViewController: UIViewController, PopupDelegate {
     
     //MARK: - PopupDelegate methods
     func onOpenChatBtnClicked() {
-        let myChannelUrl = URL(string: "https://open.kakao.com")
+        let myChatUrl = URL(string: "https://open.kakao.com")
         self.myWebView.load(URLRequest(url: myChannelUrl! ))
     }
 }

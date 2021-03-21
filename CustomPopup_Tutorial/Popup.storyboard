@@ -59,10 +59,24 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dtd-ta-sMi">
-                                <rect key="frame" x="147" y="550" width="120" height="70"/>
+                                <rect key="frame" x="147" y="510" width="120" height="110"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYK-jl-4bB">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sR-FM-JiR">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="KHD-vl-rS4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="네이버 블로그">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onBlogButtonClicked:" destination="VPw-M7-t7c" eventType="touchUpInside" id="zGj-AP-dJk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYK-jl-4bB">
+                                        <rect key="frame" x="0.0" y="40" width="120" height="30"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="f1f-bg-XjU"/>
@@ -76,7 +90,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbw-z1-JCh">
-                                        <rect key="frame" x="0.0" y="40" width="120" height="30"/>
+                                        <rect key="frame" x="0.0" y="80" width="120" height="30"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="ZHE-lv-295"/>
@@ -107,6 +121,7 @@
                     </view>
                     <connections>
                         <outlet property="bgBtn" destination="2qB-rs-RVZ" id="b71-hR-m87"/>
+                        <outlet property="blogBtn" destination="7sR-FM-JiR" id="2sW-rO-Kzf"/>
                         <outlet property="contentView" destination="79r-NB-SbU" id="Hms-DA-KQA"/>
                         <outlet property="openChatBtn" destination="QYK-jl-4bB" id="6yM-UM-g7Z"/>
                         <outlet property="subscribeBtn" destination="Tbw-z1-JCh" id="bfc-7L-crG"/>
@@ -121,6 +136,9 @@
         <image name="smiling" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
