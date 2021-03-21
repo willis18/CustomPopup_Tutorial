@@ -29,7 +29,7 @@ class ViewController: UIViewController, PopupDelegate {
     
     @objc fileprivate func loadWebView(){
         let myblogUrl = URL(string: "https://blog.naver.com")
-        self.myWebView.load(URLRequest(url: myChannelUrl! ))
+        self.myWebView.load(URLRequest(url: myblogUrl! ))
     }
 
     @IBAction func onCreatePopupBtnClicked(_ sender: UIButton) {
@@ -55,7 +55,7 @@ class ViewController: UIViewController, PopupDelegate {
     //MARK: - PopupDelegate methods
     func onOpenChatBtnClicked() {
         let myChatUrl = URL(string: "https://open.kakao.com")
-        self.myWebView.load(URLRequest(url: myChannelUrl! ))
+        self.myWebView.load(URLRequest(url: myChatUrl! ))
     }
 }
 
